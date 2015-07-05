@@ -27,7 +27,7 @@ Template.appBody.addNotification = function(notification) {
   Meteor.setTimeout(function() {
     notifications.remove(id);
   }, NOTIFICATION_TIMEOUT);
-}
+};
 
 Meteor.startup(function () {
   // set up a swipe left / right handler
@@ -159,7 +159,7 @@ Template.appBody.events({
   },
 
   'click #menu a': function(event) {
-    nextInitiator = 'menu'
+    nextInitiator = 'menu';
     Session.set(MENU_KEY, false);
   },
 
@@ -174,14 +174,14 @@ Template.appBody.events({
 Template.pitTemplate.helpers({
   pitpoints: function(){
     var pitListCursor = pits.find();
-    console.log("find done");
+    //console.log("find done");
     //var pitList = pitListCursor.fetch();
     pitListCursor.forEach(function(point){
-      console.log("point found");
+      //console.log("point found");
       var lat = parseFloat(point.geometry.coordinates[1]);
-      console.log(lat);
+      //console.log(lat);
       var long = parseFloat(point.geometry.coordinates[0]);
-      console.log(long);
+      //console.log(long);
       L.marker(L.latLng(lat,long)).addTo(map);
     });
     //return pitList;
