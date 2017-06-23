@@ -20,7 +20,7 @@ If you fork or download the code you'll need to feed your server side database. 
 
 * Annie - annie@sproutlabs.com.au
 
-* Brian - ba.jones@gmail.com
+* Brian - ba.jones.me@gmail.com
 
 * Peter - botheredbybees@gmail.com
 
